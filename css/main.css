@@ -8,3 +8,51 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+header{
+  height: 80px;
+  position: sticky;
+
+}
+
+.d-flex {
+  display: flex;
+}
+
+.content{
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.content img {
+  padding-right: 40px;
+}
+
+.content nav {
+  align-items: center;
+}
+
+.content nav ul li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.left.d-flex a {
+  text-decoration: none;
+  font-weight: 400 bold;
+  color: black;
+}
+
+.right.d-flex a {
+  text-decoration: none;
+  font-weight: 400 bold;
+  color: black;
+}
+
+.right .link a{
+  background-color: rgb(0, 97, 255);
+  color: white;
+  padding: 7px 15px;
+}
+
