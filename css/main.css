@@ -31,11 +31,28 @@ h1 {
   font-weight: 800;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
 .link a {
   background-color: rgb(0, 97, 255);
   color: white;
   padding: 7px 15px;
   text-decoration: none;
+}
+
+#conteiner-big {
+  background-color: rgb(180, 208, 231);
+  height: 740px;
+  width: 100%;
+}
+
+#conteiner-small {
+  background-color: red;
+  height: 740px;
+  width: 100%;
 }
 
 
@@ -47,7 +64,7 @@ h1 {
   padding: 20px;
 }
 
-.content img {
+#logo {
   padding-right: 40px;
   width: 70%;
 }
@@ -82,11 +99,7 @@ h1 {
 
 /*JUMBOTRON*/
 
-#conteiner-big {
-  background-color: rgb(180, 208, 231);
-  height: 740px;
-  width: 100%;
-}
+
 
 #conteiner-big .titolo {
   max-width: 1200px;
@@ -110,7 +123,7 @@ h1 {
 
 .img {
   width: 780px;
-  height: 460px;
+  height: 430px;
 }
 
 .annulla {
@@ -124,4 +137,28 @@ h1 {
 
 .arrow {
   font-size: 3rem;
+}
+
+
+/*PIANO*/
+
+#conteiner-small .titolo {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.radio {
+  line-height: 8;
+}
+
+.singolo {
+  border: 1px solid black;
+}
+
+.team {
+  border: 1px solid black;
+}
+
+.azineda {
+  border: 1px solid black;
 }
