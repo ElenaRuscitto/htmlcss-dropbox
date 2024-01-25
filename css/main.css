@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.debug{
+  border: 1px solid black;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -16,6 +19,17 @@ header{
 
 .d-flex {
   display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+
+
+.space-between {
+  justify-content: space-between;
+  
 }
 
 .padding-top {
@@ -36,6 +50,10 @@ h2 {
   font-weight: 800;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 .link a {
   background-color: rgb(0, 97, 255);
   color: white;
@@ -43,16 +61,19 @@ h2 {
   text-decoration: none;
 }
 
-#conteiner-big {
-  background-color: rgb(180, 208, 231);
-  height: 740px;
-  width: 100%;
+.conteiner-big,
+.conteiner-small{
+  width: 99%;
+  margin: 0 auto;
+}
+.conteiner-big {
+  /*background-color: rgb(180, 208, 231);*/
+  max-width: 1200px;
 }
 
-#conteiner-small {
-  background-color: red;
-  height: 740px;
-  width: 100%;
+.conteiner-small {
+  max-width: 1000px;
+  margin-top: 50px;
 }
 
 
@@ -64,9 +85,9 @@ h2 {
   padding: 20px;
 }
 
-#logo {
+#logo img {
   padding-right: 40px;
-  width: 70%;
+  width: 100%;
 }
 
 .content nav {
@@ -75,19 +96,21 @@ h2 {
 
 .content nav ul li {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 15px;
 }
 
 .left.d-flex a {
   text-decoration: none;
   font-weight: 400 bold;
   color: black;
+  padding-left: 15px;
 }
 
 .right.d-flex a {
   text-decoration: none;
   font-weight: 400 bold;
   color: black;
+  padding-left: 15px;
 }
 
 .right .link a {
@@ -99,31 +122,33 @@ h2 {
 
 /*JUMBOTRON*/
 
-
-
-#conteiner-big .titolo {
-  max-width: 1200px;
-  margin: 0 auto;
+.jumbo {
+  background-color: rgb(180, 208, 231);
+  height: 750px;
 }
 
 .jumbotron-bottom {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 70px;
+  margin-top: 50px;
 }
 
 .testo {
-  display: block;
-  width: 30%;
+
+  width: 50%;
+  margin: 0px 20px 30px 0px;
 }
 
 .testo p {
   font-weight: 600;
 } 
 
-.img {
-  width: 780px;
-  height: 430px;
+.img-jumbo img {
+  width: 100%;
+}
+
+.conteiner-big .titolo.padding-top {
+  padding-top: 50px;
 }
 
 .annulla {
@@ -142,18 +167,57 @@ h2 {
 
 /*PIANO*/
 
-#conteiner-small .titolo {
+.conteiner-small .titolo {
   max-width: 1000px;
   margin: 50px auto;
 }
 
 .radio {
   line-height: 8;
+  display: inline;
+  padding-right: 40px;
 }
 
-.singolo {
-  border: 1px solid black;
+.colum.d-flex {
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
+.card {
+  border: 1px solid black;
+  text-align: left;
+  width: 300px;
+  height: 1000px;
+  padding-left: 10px;
+}
+
+.card .top{
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.center {
+  padding: 20px 0px 50px 15px;
+
+}
+
+.prezzo {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.mese {
+  color: rgb(141, 141, 141);
+  padding-top: 10px;
+}
+
+.special {
+  list-style: none;
+  padding: 0px 15px 20px 0px;
+  line-height: 2.5;
+}
+
 
 .team {
   border: 1px solid black;
