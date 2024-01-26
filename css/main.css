@@ -54,6 +54,10 @@ h3 {
   font-size: 1.2rem;
 }
 
+.h3-operazioni {
+  font-size: 1.5rem;
+}
+
 .h5-lista {
   padding: 60px 0 0 15px;
 }
@@ -278,11 +282,44 @@ p {
 
 }
 
-
 .team {
   border: 1px solid black;
 }
 
 .azineda {
   border: 1px solid black;
+}
+
+
+/*PARTNER*/
+
+.partner {
+  height: 570px;
+}
+
+.link.partner a{
+ background-color: white;
+ color: black;
+ border: 1px solid black;
+
+}
+
+
+/*OPERAZIONI*/
+
+.box-cards.wrapper{
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+#carta {
+  height: 500px;
+  width: calc(100% / 3);
+  min-width: 200px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.card-img {
+  width: 100%;
 }
