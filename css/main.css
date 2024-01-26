@@ -60,6 +60,10 @@ h2 {
   font-weight: 800;
 }
 
+.titolo h2 {
+  margin-bottom: 70px;
+}
+
 h3 {
   font-size: 1.2rem;
 }
@@ -228,35 +232,33 @@ p {
 }
 
 .card {
-  border: 1px solid black;
-  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   width: 300px;
   height: 1000px;
 
 }
 
 .card-big{
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   text-align: left;
   height: 300px;
   padding-left: 10px;
 }
 
 .card .top{
-  border-bottom: 1px solid black;
-  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .card-big .top{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px;
   text-align: center;
 }
 
 .center {
   padding: 20px 0px 50px 15px;
-
 }
 
 .center-special {
@@ -273,11 +275,47 @@ p {
   padding-top: 10px;
 }
 
-.lista-top {
+.lista-top,
+.lista-bottom {
   list-style: none;
-  padding: 0px 15px 20px 15px;
-  line-height: 2.5;
-  font-size: 15px;
+  margin-left: 30px;
+}
+
+ul.lista-top li,
+ul.lista-bottom li {
+  font-family: FontAwesome;
+  margin-bottom: 15px;
+}
+
+ul.lista-bottom li {
+  color: #0061ff;
+  margin-top: 30px;
+  list-style-type:'\f00c';
+}
+
+ul.lista-top li span,
+ul.lista-bottom li span {
+  font-family: 'Open Sans', 'sans-serif';
+  color: black;
+  margin-left: 3px;
+}
+
+.lista-top li:nth-child(1) {
+  list-style-type: '\f007';
+}
+
+/* da mettere font aw */
+.lista-top li:nth-child(2) {
+  list-style-type: '\f007';
+}
+/* da mettere font aw */
+.lista-top li:nth-child(3) {
+  list-style-type: '\f007';
+}
+
+/* da mettere font aw */
+.lista-top li#strano {
+  list-style-type: '\f0c0';
 }
 
 .link.acquisto {
@@ -286,13 +324,6 @@ p {
 
 .link.acquisto.ufficio {
   padding-top: 10px;
-}
-
-.lista-bottom {
-  list-style: none;
-  padding: 5px 15px 20px 15px;
-  line-height: 2.5;
-  font-size: 15px;
 }
 
 .oppure {
@@ -318,6 +349,69 @@ p {
   border: 1px solid black;
 }
 
+/*radio*/
+/* / container radio / */
+.container {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+/* / Nascondo btn default / */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* / btn custom / */
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left:12px;
+  height: 19px;
+  width: 19px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* / hover ombra / */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* / su checked colore / */
+.container input:checked ~ .checkmark {
+  background-color: #0061FF;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* / stile cerchio interno bianco / */
+.container .checkmark:after {
+     top: 4px;
+    left: 4px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: white;
+}
+/*radio*/
 
 /*PARTNER*/
 
