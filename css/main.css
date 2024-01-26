@@ -348,6 +348,7 @@ p {
 .square-left {
   width: calc(100% / 3);
   background-color: red;
+  flex-wrap: wrap;
 }
 
 .square-center {
@@ -358,42 +359,85 @@ p {
 .square-right {
   width: calc(100% / 3);
   background-color: green;
+  flex-wrap: wrap;
+}
+
+.quadrato {
+  width: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .designit {
   background-color: rgb(162, 211, 155);
-  width: 310px;
-  height: 310px;
   flex-wrap: wrap;
-  /* aspect-ratio: 10/10; */
 }
 
 .asu {
   background-color: rgb(97, 8, 43);
-  width: 310px;
-  height: 310px;
   flex-wrap: wrap;
-  /* aspect-ratio: 10/10; */
 }
 
 .uf {
   background-color: rgb(0, 147, 206);
-  width: 310px;
-  height: 310px;
-  flex-wrap: wrap;
-  /* aspect-ratio: 10/10; */
+   flex-wrap: wrap;
 }
 
 .topps {
   background-color: rgb(255, 28, 28);
-  width: 310px;
-  height: 310px;
   flex-wrap: wrap;
-  /* aspect-ratio: 10/10; */
 }
 
-#img-designit {
-  color: white;
+.world {
+  background-color: rgb(213, 0, 31);
+}
+
+.hearst {
+  background-color: rgb(180, 208, 231);
+}
+
+.lonely {
+  background-color: rgb(13, 36, 129);
+}
+
+.clear {
+  background-color: rgb(255, 216, 48);
+}
+
+.img-designit {
+  width: 46%;
+  filter: hue-rotate(45deg); -webkit-filter: hue-rotate(45deg);
+}
+
+.img-asu {
+  width: 50%;
+}
+
+.img-uf {
+  width: 50%;
+}
+
+.img-topps {
+  width: 50%;
+}
+
+.img-world {
+  width: 50%;
+}
+
+.img-hearst {
+  width: 50%;
+}
+
+.img-lonely {
+  width: 55%;
+}
+
+.img-clear {
+  width: 50%;
 }
 
 
@@ -416,4 +460,21 @@ p {
 .titolo-azienda {
   padding-top: 120px;
   color: rgb(110, 38, 72);
+}
+
+
+/*FAQ*/
+
+.faq {
+  padding:40px 0 37px 0;
+  border-top:1px solid rgb(212, 212, 212);
+}
+
+.faq-left {
+  width: 70%;
+}
+
+.faq-right {
+  width: 10%;
+  text-align: center;
 }
