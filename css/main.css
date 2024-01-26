@@ -483,6 +483,7 @@ p {
 /*FAQ*/
 
 .faq {
+  margin-top: 60px;
   padding:40px 0 37px 0;
   border-top:1px solid rgb(212, 212, 212);
 }
@@ -494,4 +495,9 @@ p {
 .faq-right {
   width: 10%;
   text-align: center;
+}
+
+.faq-special {
+  padding:40px 0 37px 0;
+  border-top:1px solid rgb(212, 212, 212);
 }
