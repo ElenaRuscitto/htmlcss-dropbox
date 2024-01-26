@@ -79,7 +79,8 @@ p {
 }
 
 .conteiner-big,
-.conteiner-small{
+.conteiner-small,
+.conteiner-small-azienda{
   width: 99%;
   margin: 0 auto;
 }
@@ -91,6 +92,11 @@ p {
   max-width: 1000px;
   margin-top: 50px;
 }
+
+.conteiner-small-azienda {
+  max-width: 1000px;
+}
+
 
 
 /*HEADER*/
@@ -388,4 +394,26 @@ p {
 
 #img-designit {
   color: white;
+}
+
+
+/*AZIENDA*/
+
+.azienda {
+  background-color: rgb(180, 208, 231);
+  height: 360px;
+}
+
+.azienda-left {
+  width: 70%;
+}
+
+.azienda-right {
+  width: 30%;
+  padding-top: 145px;
+}
+
+.titolo-azienda {
+  padding-top: 120px;
+  color: rgb(110, 38, 72);
 }
