@@ -25,6 +25,9 @@ header{
   justify-content: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
 
 
 .space-between {
@@ -69,6 +72,12 @@ h5 {
 p {
   font-size: 15px;
   padding-top: 35px;
+}
+
+.divisore {
+  border-bottom: 2px solid #d0d0d3;
+  width: 100px;
+  margin-top: 50px;
 }
 
 .link a {
@@ -342,53 +351,41 @@ p {
   height: 620px;
   width: 100%;
   margin-top: 100px;
-
 }
 
-.square-left {
+.square-big .square-big {
+  margin-top: 0;
+  height: 100%;
+}
+.square-big .square-big .colonna {
   width: calc(100% / 3);
-  background-color: red;
-  flex-wrap: wrap;
+  height: 100% ;
 }
 
-.square-center {
-  width: calc(100% / 3);
-  background-color: yellow;
-}
-
-.square-right {
-  width: calc(100% / 3);
-  background-color: green;
-  flex-wrap: wrap;
-}
 
 .quadrato {
-  width: 50%;
-  aspect-ratio: 1;
+   width: calc(100% / 2);
+   height: calc(100% / 2);
+  aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .designit {
   background-color: rgb(162, 211, 155);
-  flex-wrap: wrap;
 }
 
 .asu {
   background-color: rgb(97, 8, 43);
-  flex-wrap: wrap;
 }
 
 .uf {
   background-color: rgb(0, 147, 206);
-   flex-wrap: wrap;
 }
 
 .topps {
   background-color: rgb(255, 28, 28);
-  flex-wrap: wrap;
 }
 
 .world {
@@ -409,37 +406,57 @@ p {
 
 .img-designit {
   width: 46%;
-  filter: hue-rotate(45deg); -webkit-filter: hue-rotate(45deg);
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
 .img-asu {
   width: 50%;
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
 .img-uf {
   width: 50%;
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
 .img-topps {
   width: 50%;
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
 .img-world {
   width: 50%;
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
 .img-hearst {
   width: 50%;
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
 .img-lonely {
   width: 55%;
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
 .img-clear {
   width: 50%;
+  filter: invert(100%) sepia(0%) saturate(7438%) hue-rotate(104deg) brightness(119%) contrast(98%);
 }
 
+.colonna.colonna-centrale {
+  background-color: #f5f5f5;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.centro {
+  margin: 50px;
+}
+
+.logo-partner img {
+  width: 50%;
+}
 
 /*AZIENDA*/
 
