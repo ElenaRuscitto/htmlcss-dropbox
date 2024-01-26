@@ -13,8 +13,12 @@ body {
 
 header{
   height: 80px;
-  position: sticky;
-
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
 }
 
 .d-flex {
@@ -29,6 +33,9 @@ header{
   flex-wrap: wrap;
 }
 
+img {
+  width: 100%;
+}
 
 .space-between {
   justify-content: space-between;
@@ -109,17 +116,15 @@ p {
 
 
 /*HEADER*/
-.content{
-  justify-content: space-between;
+.content {
   align-items: center;
   height: 100%;
-  padding: 20px;
 }
 
-#logo img {
+/* #logo img {
   padding-right: 40px;
   width: 100%;
-}
+} */
 
 .content nav {
   align-items: center;
@@ -128,6 +133,10 @@ p {
 .content nav ul li {
   display: inline-block;
   padding-right: 15px;
+}
+
+.left {
+  margin-left: 40px;
 }
 
 .left.d-flex a {
@@ -141,7 +150,7 @@ p {
   text-decoration: none;
   font-weight: 400 bold;
   color: black;
-  padding-left: 15px;
+  margin-left: 30px;
 }
 
 .right .inizia a {
@@ -153,21 +162,24 @@ p {
 
 /*JUMBOTRON*/
 
-.jumbo {
+.color-jumbo {
   background-color: rgb(180, 208, 231);
-  height: 750px;
+}
+
+.jumbo {
+  height: 800px;
 }
 
 .jumbotron-bottom {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 50px;
+
 }
 
 .testo {
 
-  width: 50%;
-  margin: 0px 20px 30px 0px;
+  width: 55%;
+  margin: 15px 20px 30px 0px;
 }
 
 .testo p {
@@ -176,10 +188,11 @@ p {
 
 .img-jumbo img {
   width: 100%;
+  margin-top: 50px;
 }
 
-.conteiner-big .titolo.padding-top {
-  padding-top: 50px;
+.conteiner-big .titolo {
+  margin-top: 120px;
 }
 
 .annulla {
@@ -521,7 +534,7 @@ p {
   padding: 20px;
 }
 
-.elenco-footer, li, a {
+.elenco-footer li a {
   color: white;
   font-size: 1.3rem;
   text-decoration: none; 
@@ -536,7 +549,11 @@ p {
   color: white;
 }
 
-.elenco-footer, li, a:hover{
+.elenco-footer li {
+  list-style: none;
+}
+
+.elenco-footer li a:hover{
   color: rgb(132, 130, 130);
 }
 
