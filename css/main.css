@@ -500,4 +500,51 @@ p {
 .faq-special {
   padding:40px 0 37px 0;
   border-top:1px solid rgb(212, 212, 212);
+  border-bottom:1px solid rgb(212, 212, 212);
+}
+
+/* FOOTER */
+
+.nero {
+  background-color: rgb(0, 0, 0);
+  border-bottom: 2px solid white;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.elenco-footer {
+  margin: 90px auto;
+  width: 20%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.elenco-footer, li, a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none; 
+  list-style: none;
+  padding: 5px;
+}
+
+.elenco-footer ul li:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.elenco-footer, li, a:hover{
+  color: rgb(132, 130, 130);
+}
+
+.elenco-footer .primo:hover {
+  color: rgb(42, 72, 171);
+
+}
+
+.elenco-footer ul li a  {
+  font-size: 1rem;
 }
