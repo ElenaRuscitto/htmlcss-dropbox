@@ -51,7 +51,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+h5 {
+  padding: 60px 0 0 15px;
+  
 }
 
 .link a {
@@ -188,10 +193,23 @@ h3 {
   text-align: left;
   width: 300px;
   height: 1000px;
+
+}
+
+.card-big{
+  border: 1px solid black;
+  text-align: left;
+  height: 300px;
   padding-left: 10px;
 }
 
 .card .top{
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-big .top{
   border-bottom: 1px solid black;
   padding: 10px;
   text-align: center;
@@ -212,10 +230,32 @@ h3 {
   padding-top: 10px;
 }
 
-.special {
+.lista-top {
   list-style: none;
-  padding: 0px 15px 20px 0px;
+  padding: 0px 15px 20px 15px;
   line-height: 2.5;
+  font-size: 15px;
+}
+
+.link.acquisto {
+  padding: 0 0 30px 10px;
+}
+
+.lista-bottom {
+  list-style: none;
+  padding: 5px 15px 20px 15px;
+  line-height: 2.5;
+  font-size: 15px;
+}
+
+.center.left{
+  width: 70%;
+
+}
+
+.center.right {
+  width: 30%;
+
 }
 
 
