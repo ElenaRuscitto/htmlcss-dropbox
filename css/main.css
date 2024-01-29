@@ -613,10 +613,6 @@ ul.lista-bottom li span {
   border-bottom:1px solid rgb(212, 212, 212);
 }
 
-/* .faq-right span {
-  font-weight: 4;
-} */
-
 
 /* FOOTER */
 
@@ -665,7 +661,29 @@ ul.lista-bottom li span {
 
 .footer-bottom .testo-footer {
   color: rgb(132, 130, 130);
-  /* margin-left: 20px;
-  margin-top: 40px; */
   margin: 40px 0 50px 20px;
 }
+
+/* BONUS */
+
+.bonus {
+  display: none;
+}
+
+.faq:hover .bonus {
+  display:inline-block;
+  margin-top: 20px;
+}
+
+.faq:hover .fa-chevron-down {
+  display: none;
+}
+
+ .faq-special:hover .bonus {
+  display:inline-block;
+  margin-top: 20px;
+} 
+
+.faq-special:hover .fa-chevron-down {
+  display: none;
+} 
