@@ -51,12 +51,12 @@ img {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 800;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
@@ -125,15 +125,6 @@ p {
   height: 100%;
 }
 
-/* #logo img {
-  padding-right: 40px;
-  width: 100%;
-} */
-
-.content nav {
-  align-items: center;
-}
-
 .content nav ul li {
   display: inline-block;
   padding-right: 15px;
@@ -145,22 +136,39 @@ p {
 
 .left.d-flex a {
   text-decoration: none;
-  font-weight: 400 bold;
   color: black;
   padding-left: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.left.d-flex a:hover {
+  padding-bottom: 34px;
+  border-bottom: 3px solid black;
 }
 
 .right.d-flex a {
   text-decoration: none;
-  font-weight: 400 bold;
+  font-weight: bold;
   color: black;
   margin-left: 30px;
+  font-size: 13px;
 }
+
+.right.d-flex a:hover {
+  padding-bottom: 30px;
+  border-bottom: 3px solid black;
+}
+
 
 .right .inizia a {
   background-color: rgb(0, 97, 255);
   color: white;
   padding: 7px 15px;
+}
+
+.inizia a:hover {
+  opacity: 0.7;
 }
 
 
@@ -177,11 +185,9 @@ p {
 .jumbotron-bottom {
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
 .testo {
-
   width: 55%;
   margin: 15px 20px 30px 0px;
 }
@@ -200,12 +206,7 @@ p {
 }
 
 .annulla {
-  margin-top: 35px;
-  padding-bottom: 70px;
-  }
-
-.annulla {
-  padding-bottom: 40px;
+  padding-bottom: 90px;
  }
 
 .arrow {
@@ -235,20 +236,19 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.3);
   width: 300px;
   height: 1000px;
-
 }
 
 .card-big{
   border: 1px solid rgba(0, 0, 0, 0.3);
   text-align: left;
   height: 300px;
-  padding-left: 10px;
 }
 
 .card .top{
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   text-align: center;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .card-big .top{
@@ -262,7 +262,7 @@ p {
 }
 
 .center-special {
-  padding: 20px 0px 50px 15px;
+  padding: 20px 0px 50px 25px;
   height: 100%;
 }
 .prezzo {
@@ -279,12 +279,17 @@ p {
 .lista-bottom {
   list-style: none;
   margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.lista-top.special {
+  margin-bottom: 71px;
 }
 
 ul.lista-top li,
 ul.lista-bottom li {
   font-family: FontAwesome;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 ul.lista-bottom li {
@@ -300,26 +305,31 @@ ul.lista-bottom li span {
   margin-left: 3px;
 }
 
+/* icona pre lista 1*/
 .lista-top li:nth-child(1) {
   list-style-type: '\f007';
 }
 
-/* da mettere font aw */
+/* icona pre lista 2 */
 .lista-top li:nth-child(2) {
-  list-style-type: '\f007';
+  list-style-type: '\f07b';
 }
-/* da mettere font aw */
+/* icona pre lista 3*/
 .lista-top li:nth-child(3) {
-  list-style-type: '\f007';
+  list-style-type: '\f1e0';
 }
 
-/* da mettere font aw */
+/* icona pre lista 1 diverso da altri 2 (2 colonna) */
 .lista-top li#strano {
   list-style-type: '\f0c0';
 }
 
 .link.acquisto {
   padding: 0 0 30px 10px;
+}
+
+.link a:hover {
+  opacity: 0.7;
 }
 
 .link.acquisto.ufficio {
@@ -330,27 +340,17 @@ ul.lista-bottom li span {
   padding-left: 15px;
 }
 
-
 .center-left{
   width: 68%;
-
 }
 
 .center-right {
-  width: 30%;
-
+  width: 26%;
 }
 
-.team {
-  border: 1px solid black;
-}
 
-.azineda {
-  border: 1px solid black;
-}
-
-/*radio*/
-/* / container radio / */
+/*radio particolare*/
+/* container radio */
 .container {
   display: inline;
   position: relative;
@@ -364,14 +364,14 @@ ul.lista-bottom li span {
 
 }
 
-/* / Nascondo btn default / */
+/* Nascondo btn default */
 .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-/* / btn custom / */
+/* btn custom */
 .checkmark {
   position: absolute;
   top: 0px;
@@ -382,12 +382,12 @@ ul.lista-bottom li span {
   border-radius: 50%;
 }
 
-/* / hover ombra / */
+/* hover ombra */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-/* / su checked colore / */
+/* su checked colore */
 .container input:checked ~ .checkmark {
   background-color: #0061FF;
 }
@@ -402,7 +402,7 @@ ul.lista-bottom li span {
   display: block;
 }
 
-/* / stile cerchio interno bianco / */
+/* stile cerchio interno bianco */
 .container .checkmark:after {
      top: 4px;
     left: 4px;
@@ -411,19 +411,22 @@ ul.lista-bottom li span {
     border-radius: 50%;
     background: white;
 }
-/*radio*/
+/* /radio particolare */
 
 /*PARTNER*/
-
-.partner {
-  height: 570px;
-}
 
 .link.partner a{
  background-color: white;
  color: black;
  border: 1px solid black;
+}
 
+.testo-partner {
+  margin-bottom: 40px;
+}
+
+.partner {
+  margin-bottom: 60px;
 }
 
 
@@ -432,13 +435,14 @@ ul.lista-bottom li span {
 .box-cards.wrapper{
   justify-content: center;
   flex-wrap:wrap;
+  margin-top: 40px;
 }
 
 #carta {
   height: 500px;
   width: calc(100% / 3);
   min-width: 200px;
-  padding-right: 20px;
+  padding-right: 30px;
   padding-top: 30px;
 }
 
