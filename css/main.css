@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 .debug{
   border: 1px solid black;
@@ -475,12 +475,15 @@ ul.lista-bottom li span {
 
 
 .quadrato {
-   width: calc(100% / 2);
-   height: calc(100% / 2);
+  width: calc(100% / 2);
+  height: calc(100% / 2);
   aspect-ratio: 1/1;
-  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.quadrato:hover {
+  border: 15px solid rgba(255, 255, 255, 0.3);
 }
 
 .designit {
@@ -574,10 +577,11 @@ ul.lista-bottom li span {
 .azienda {
   background-color: rgb(180, 208, 231);
   height: 360px;
+  margin-bottom: 120px;
 }
 
 .azienda-left {
-  width: 70%;
+  width: 50%;
 }
 
 .azienda-right {
@@ -606,6 +610,7 @@ ul.lista-bottom li span {
 .faq-right {
   width: 10%;
   text-align: center;
+  font-size: 10px;
 }
 
 .faq-special {
@@ -625,29 +630,23 @@ ul.lista-bottom li span {
 
 .elenco-footer {
   margin: 90px auto;
-  width: 20%;
-  height: 90%;
-  display: flex;
   justify-content: center;
-  padding: 20px;
 }
 
 .elenco-footer li a {
   color: white;
-  font-size: 1.3rem;
+  font-size: .8rem;
   text-decoration: none; 
   list-style: none;
   padding: 5px;
+  line-height: 2.3;
 }
 
 .elenco-footer ul li:first-child {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: white;
-}
-
-.elenco-footer li {
   list-style: none;
 }
 
@@ -655,12 +654,9 @@ ul.lista-bottom li span {
   color: rgb(132, 130, 130);
 }
 
-.elenco-footer ul li a  {
-  font-size: 1rem;
-}
-
 .footer-bottom{
   height: 90px;
+  margin-left: 35px;
 }
 .footer-bottom .divisore {
   border: 1px solid rgb(132, 130, 130);
@@ -670,6 +666,7 @@ ul.lista-bottom li span {
 
 .footer-bottom .testo-footer {
   color: rgb(132, 130, 130);
-  margin-left: 20px;
-  padding-bottom: -40px;
+  /* margin-left: 20px;
+  margin-top: 40px; */
+  margin: 40px 0 50px 20px;
 }
