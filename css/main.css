@@ -664,7 +664,7 @@ ul.lista-bottom li span {
   margin: 40px 0 50px 20px;
 }
 
-/* BONUS */
+/* BONUS FAQ */
 
 .bonus {
   display: none;
@@ -687,3 +687,54 @@ ul.lista-bottom li span {
 .faq-special:hover .fa-chevron-down {
   display: none;
 } 
+
+/* BONUS HEADER */
+
+
+ul#menu li {
+	margin:0;
+	padding:0;
+	float:left;
+	display: block;
+	position: relative;
+}
+
+ul#menu li a {
+	float: left;
+	padding:5px 20px;
+	text-decoration:none;
+}
+
+
+ul#menu ul {
+	margin:2px 0 0;
+	padding:0;
+	display:inline-block;
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 53px;
+	left: 0;
+	z-index:999;
+	background: rgb(242, 238, 232);
+}
+
+ul#menu li:hover ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+ul#menu ul a {
+	padding:10px;
+	width: 130px;
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+
+ul#menu ul a:hover {
+	background-color: rgb(146, 144, 141);
+	color:black;
+}
