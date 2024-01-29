@@ -463,13 +463,9 @@ ul.lista-bottom li span {
   margin-top: 100px;
 }
 
-.square-big .square-big {
-  margin-top: 0;
-  height: 100%;
-}
-.square-big .square-big .colonna {
+.square-big .colonna {
   width: calc(100% / 3);
-  height: 100% ;
+  aspect-ratio: 1;
 }
 
 
@@ -642,7 +638,7 @@ ul.lista-bottom li span {
   text-decoration: none; 
   list-style: none;
   padding: 5px;
-  line-height: 2.3;
+  line-height: 2.5;
 }
 
 .elenco-footer ul li:first-child {
